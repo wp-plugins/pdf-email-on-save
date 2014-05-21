@@ -24,7 +24,7 @@ class PDF_Email {
 	 *
 	 * @var     string
 	 */
-	const VERSION = '1.0.0';
+	const VERSION = '1.0.1';
 
 	/**
 	 * Unique identifier for your plugin.
@@ -389,8 +389,8 @@ class PDF_Email {
 		// Create a filter to allow users to change the html
 		$html = apply_filters( 'pdf_email_on_save_html', $html );
 
-		// Encode contents as UTF-8
-		$mpdf->WriteHTML( utf8_encode( $html ) );
+		// Write HTML
+		$mpdf->WriteHTML( $html );
 
 		$full_content = $mpdf->Output( '', 'S' );
 
