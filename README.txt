@@ -1,5 +1,5 @@
 === PDF Email on Save ===
-Contributors: mjbanks, jchristopher
+Contributors: mjbanks
 Donate link: http://mattbanks.me/donate/
 Tags: pdf, email, custom post types,
 Requires at least: 3.7
